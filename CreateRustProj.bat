@@ -2,5 +2,5 @@
 cd /
 cd Rust_Test
 set name=
-set /p name= "プロジェクト名を入力"
+set /p name= "input proj_name"
 cargo new %name% --bin
