@@ -26,7 +26,7 @@ fn main() {
     println!("入力した値は: {}", guess);
     //rustの変数は途中で型を変えることができる
     let guess: u32 = guess.trim().parse()
-        .expect("Please type a number!");
+        .expect("数字を入力してください!");
     //パターンマッチ
     match guess.cmp(&secret_number) {
         Ordering::Less    => println!("ちいさい!"),
