@@ -1,5 +1,5 @@
 Rust_Test
-+ memo:
+# memo
 + vscode-rust-syntax ハイライト
 + Rust (rls) 補完
 + C/C++ デバッガ
