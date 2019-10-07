@@ -27,22 +27,8 @@ impl Philosopher
     }
 }
 
-fn main() 
+fn wait_key()
 {
-
-    let philosophers = vec!
-    [
-        Philosopher::new("Judith Butler"),
-        Philosopher::new("Gilles Deleuze"),
-        Philosopher::new("Karl Marx"),
-        Philosopher::new("Emma Goldman"),
-        Philosopher::new("Michel Foucault"),
-    ];
-
-    for p in &philosophers 
-    {
-        p.eat();
-    }
     println!("何かキーを押すと終了します");
     loop
     {
@@ -60,4 +46,22 @@ fn main()
         //     println!("{:?}を押しました", key);
         // }
     }
+}
+fn main() 
+{
+
+    let philosophers = vec!
+    [
+        Philosopher::new("Judith Butler"),
+        Philosopher::new("Gilles Deleuze"),
+        Philosopher::new("Karl Marx"),
+        Philosopher::new("Emma Goldman"),
+        Philosopher::new("Michel Foucault"),
+    ];
+    // for(const auto& i : array)的な
+    for p in &philosophers 
+    {
+        p.eat();
+    }
+    wait_key();
 }
