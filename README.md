@@ -11,4 +11,4 @@ Rust_Test
 ## Mac
 + インストール https://dev.classmethod.jp/server-side/language/rust-setup-with-rustup/
 + 忘れずに設定する `$ source $HOME/.cargo/env`
-+ 実行権限を与える `chmod +x Hoge.sh`
++ 実行権限を与える `$ chmod +x Hoge.sh`
