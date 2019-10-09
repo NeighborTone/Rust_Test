@@ -1,7 +1,8 @@
 /** https://doc.rust-jp.rs/the-rust-programming-language-ja/1.6/book/dining-philosophers.html */
 use std::thread;
 use std::time::Duration;
-use device_query::{DeviceQuery, DeviceState, Keycode};  //キー入力を使用可能にする
+#[cfg(target_os="windows")]
+use device_query::{DeviceQuery, DeviceState, Keycode};  //キー入力を使用可能にする(macには対応していなかった...)
 
 struct Philosopher 
 {
@@ -29,6 +30,7 @@ impl Philosopher
 
 //キー入力されるまで処理を止める
 //strはプリミティブ型Stringはライブラから提供されている型
+#[cfg(target_os="windows")]
 fn wait_key(str: &str)
 {
     println!("{}", str);
@@ -74,5 +76,6 @@ fn main()
         //実行が終わるまで処理をブロックする。（割り込み防止）
         h.join().unwrap();
     }
+    #[cfg(target_os="windows")]
     wait_key("何かキーを押すと終了します");
 }
