@@ -11,5 +11,5 @@ Rust_Test
 - 環境変数に`CARGO_HTTP_CHECK_REVOKE=false`を追加
 ## Mac
 + インストール https://dev.classmethod.jp/server-side/language/rust-setup-with-rustup/
-+ 忘れずに設定する `$ source $HOME/.cargo/env`
++ 忘れずにパスを通す `$ source $HOME/.cargo/env`
 + 実行権限を与える `$ chmod +x Hoge.sh`
