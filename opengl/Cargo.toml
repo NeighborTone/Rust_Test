@@ -1,0 +1,13 @@
+[package]
+name = "opengl"
+version = "0.1.0"
+authors = ["tonarinohito <rsp44316@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sdl2 = "0.32.2"
+gl = "0.14.0"         #OpenGLのAPIが呼べる
+cgmath = "0.17.0"     #数学ライブラリ
+c_str_macro = "1.0.2" #C言語と互換のある文字列型を生成できるマクロが使用可能になる
